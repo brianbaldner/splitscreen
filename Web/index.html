@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#showUrl {
+border:2px solid #0A9;
+height:90%;
+width:95%;
+}
+#url {
+width:30em;
+}
+</style>
+<script type="text/javascript">
+  function loadUrl() {
+    var url = document.getElementById( 'url' ).value;
+    var showUrl = document.getElementById( 'showUrl' );
+    showUrl.src = url;
+}
+</script>
+</head>
+<body>
+<form>
+    Enter URL to load: <input type="text" id="url" />
+    <input type="button" value="Load URL" onclick="loadUrl()" />
+</form>
+<iframe id="showUrl"></iframe>
+</body>
+</html>
